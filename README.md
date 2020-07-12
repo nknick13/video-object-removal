@@ -1,15 +1,17 @@
 # video-object-removal
 Just draw a bounding box and you can remove the object you want to remove.
 ## Installation
-All the code has been tested on Ubuntu 16.04, Python 3.5, **Pytorch 0.4.0**, CUDA 8.0, GTX1080Ti GPU.
+All code has been tested on MAC OSX 15.4 Catalina, python 3.5, Pytorch 0.4.0
 
 - Clone the repository 
 ```shell
 git clone https://github.com/zllrunning/video-object-removal.git
 cd video-object-removal
 cd get_mask
+export $PYTHONPATH = $PWD:$PYTHONPATH
 bash make.sh
 cd ../inpainting
+export $PYTHONPATH = $PWD:$PYTHONPATH
 bash install.sh
 cd ..
 ```
